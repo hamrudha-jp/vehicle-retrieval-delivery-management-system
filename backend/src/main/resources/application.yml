@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: vehicle-retrieval-system
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/vrdms_db}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres123}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+  expiration: ${JWT_EXPIRATION:86400000} # 24 hours in milliseconds

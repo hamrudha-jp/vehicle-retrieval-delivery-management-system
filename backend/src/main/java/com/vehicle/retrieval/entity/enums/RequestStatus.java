@@ -1,0 +1,16 @@
+package com.vehicle.retrieval.entity.enums;
+
+public enum RequestStatus {
+    CREATED,
+    ACCEPTED,
+    PICKUP_OTP_PENDING,
+    PICKUP_VERIFIED,
+    INSPECTION_PENDING,
+    IN_PROGRESS,
+    DESTINATION_REACHED,
+    DELIVERY_OTP_PENDING,
+    DELIVERY_VERIFIED,
+    POST_INSPECTION_PENDING,
+    DELIVERED,
+    CANCELLED
+}
