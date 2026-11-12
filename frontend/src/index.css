@@ -281,6 +281,24 @@ a:hover {
 }
 
 /* Responsive Breakpoint Adaptations */
+.modal-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.metrics-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.role-select-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
 @media (max-width: 1024px) {
   .grid-cols-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
@@ -291,6 +309,26 @@ a:hover {
   .grid-cols-4, .grid-cols-3, .grid-cols-2 { grid-template-columns: 1fr; }
   .btn { width: 100%; justify-content: center; }
   .glass-panel { padding: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  .modal-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .metrics-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .role-select-grid {
+    grid-template-columns: 1fr;
+  }
+  .custom-table th {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  .custom-table td {
+    padding: 0.6rem 0.6rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 390px) {

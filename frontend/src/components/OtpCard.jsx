@@ -134,11 +134,11 @@ export const OtpCard = ({ requestId, otpType, isOwner, onVerified, onGenerated }
             </div>
           )}
 
-          <form onSubmit={handleVerify} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+          <form onSubmit={handleVerify} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <input
               type="text"
               className="form-control"
-              style={{ letterSpacing: '0.2em', fontSize: '1.2rem', fontWeight: 700, textAlign: 'center', maxWidth: '180px' }}
+              style={{ letterSpacing: '0.2em', fontSize: '1.2rem', fontWeight: 700, textAlign: 'center', flex: '1 1 140px', minWidth: '120px' }}
               placeholder="000000"
               maxLength={6}
               value={inputCode}
@@ -148,6 +148,7 @@ export const OtpCard = ({ requestId, otpType, isOwner, onVerified, onGenerated }
             <button
               type="submit"
               className="btn btn-primary"
+              style={{ flex: '1 1 120px' }}
               disabled={verifying || inputCode.length !== 6}
             >
               {verifying ? 'Verifying...' : 'Verify OTP'}

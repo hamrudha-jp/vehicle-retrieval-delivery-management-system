@@ -70,7 +70,7 @@ export const RegisterPage = () => {
           {/* Role Toggle Selector */}
           <div className="form-group">
             <label className="form-label">Select Role</label>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+            <div className="role-select-grid">
               <button
                 type="button"
                 className={`btn ${formData.role === 'OWNER' ? 'btn-primary' : 'btn-secondary'}`}

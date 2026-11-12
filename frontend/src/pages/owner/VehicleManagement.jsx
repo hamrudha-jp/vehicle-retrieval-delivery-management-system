@@ -156,7 +156,7 @@ export const VehicleManagement = () => {
             )}
 
             <form onSubmit={handleAddVehicle}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+              <div className="modal-grid-2">
                 <div className="form-group">
                   <label className="form-label">Make (Brand)</label>
                   <input type="text" name="make" className="form-control" placeholder="Toyota, Honda" value={formData.make} onChange={handleChange} required />
@@ -172,7 +172,7 @@ export const VehicleManagement = () => {
                 <input type="text" name="registrationNumber" className="form-control" placeholder="e.g. TN-01-AB-1234" value={formData.registrationNumber} onChange={handleChange} required />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+              <div className="modal-grid-2">
                 <div className="form-group">
                   <label className="form-label">Manufacturing Year</label>
                   <input type="number" name="vehicleYear" className="form-control" min="1990" max="2030" value={formData.vehicleYear} onChange={handleChange} required />

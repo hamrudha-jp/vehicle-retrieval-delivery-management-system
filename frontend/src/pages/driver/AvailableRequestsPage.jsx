@@ -138,7 +138,7 @@ export const AvailableRequestsPage = () => {
                   </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.5rem', marginBottom: '1rem', background: 'rgba(30, 41, 59, 0.6)', padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-md)', fontSize: '0.8rem' }}>
+                <div className="metrics-grid-3" style={{ marginBottom: '1rem', background: 'rgba(30, 41, 59, 0.6)', padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-md)', fontSize: '0.8rem' }}>
                   <div>
                     <span style={{ color: '#94a3b8', display: 'block', fontSize: '0.7rem' }}>DISTANCE</span>
                     <strong style={{ color: '#f8fafc' }}>{req.estimatedDistanceKm ? `${req.estimatedDistanceKm} km` : 'N/A'}</strong>

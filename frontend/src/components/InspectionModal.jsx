@@ -134,14 +134,14 @@ export const InspectionModal = ({ requestId, inspectionType, onClose, onSuccess 
           {/* Photo Upload */}
           <div className="form-group">
             <label className="form-label">Vehicle Condition Photo</label>
-            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <input
                 type="file"
                 accept="image/*"
                 onChange={handlePhotoUpload}
-                style={{ fontSize: '0.85rem', color: '#94a3b8' }}
+                style={{ fontSize: '0.85rem', color: '#94a3b8', maxWidth: '100%', overflow: 'hidden' }}
               />
-              <Camera size={20} color="#3b82f6" />
+              <Camera size={20} color="#3b82f6" style={{ flexShrink: 0 }} />
             </div>
             {formData.photoUrls && formData.photoUrls.startsWith('data:image') && (
               <div style={{ marginTop: '0.5rem' }}>
